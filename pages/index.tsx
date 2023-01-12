@@ -44,7 +44,7 @@ export default function Home() {
   });
 
   useEffect(() => {
-    const url = 'https://10.25.155.177:8080/subs/openSinks/try';
+    const url = 'http://10.25.155.177:8080/subs/openSinks/try';
 
     var es = new EventSource(url);
 
