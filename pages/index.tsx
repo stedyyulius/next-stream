@@ -49,9 +49,7 @@ export default function Home() {
     var es = new EventSource(url);
 
     const parseResponse:any = (msg: MessageEvent) => {
-      console.log(msg.data)
       const parsed = JSON.parse(msg.data);
-      console.log(parsed)
       setResponse(parsed);
     }
 
